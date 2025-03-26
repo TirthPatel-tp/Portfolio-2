@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css";
 import KJInfrastructure from "../../img/KJInfrastructure.png";
 import iNotebook from "../../img/iNotebook.png";
-import MusicApp from "../../img/MusicApp.png";
+import MusicApp from "../../img/musicapp.png";
 import NewsApp from "../../img/NewsApp.png";
 import TextUtils from "../../img/TextUtils.png";
 import { themeContext } from "../../Context";
