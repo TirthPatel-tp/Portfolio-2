@@ -12,18 +12,16 @@ const Toggle = () => {
     if (!darkMode) {
       theme.dispatch({ type: "toggle" });
     }
-  }, []); // runs only once on mount
+  }, [darkMode, theme]);
 
   const handleClick = () => {
-    // debugger
     theme.dispatch({ type: "toggle" });
   };
+
   return (
     <div className="toggle" onClick={handleClick}>
       <Moon />
       <Sun />
-      {/*                              toggle.css mein left ki property aik assign hy ussy delete
-                                          krna hy pehly */}
       <div
         className="t-button"
         style={darkMode ? { left: "2px" } : { right: "2px" }}
