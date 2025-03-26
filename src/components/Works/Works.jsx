@@ -3,7 +3,7 @@ import './Works.css'
 import Vodafone from "../../img/Vodafone.png"
 import NIT from "../../img/NIT.png"
 import ShreeHari from "../../img/ShreeHari.png"
-import sevenEleven from "../../img/7-11.png"
+import Ontartio from "../../img/Ontario.png"
 import McDonalds from "../../img/McDonalds.png"
 import { themeContext } from "../../Context";
 import { useContext } from "react";
@@ -22,26 +22,34 @@ function Works() {
         <div className="awesome">
                 <span style={{color: darkMode? 'white': ''}}>Works for all these</span>
                 <span>Brands & Clients</span>
-                <span>Here are some of the companies I've worked with:
-                <ul>
+                <span><h1>Here are some of the companies I've worked with:</h1>
+                <ul style={{color: darkMode? 'grey': ''}}>
                     <li>
-                        <strong>Vodafone</strong> (Customer Service Representative)<br />
+                        <strong style={{color: darkMode? 'white': ''}}>Ministry of Public and Business Service Delivery (MPBSD)</strong> - I&IT Analyst (Designer & QA)<br />
+                        • Designed government digital forms with JavaScript<br />
+                        • Led AODA-compliant accessibility testing<br />
+                        • Managed data migration for legacy systems
+                    </li><br></br>
+                    <li>
+                        <strong style={{color: darkMode? 'white': ''}}>Shree Hari Institute</strong> - IELTS Instructor<br />
+                        • Taught test strategies and English fundamentals<br />
+                        • Provided personalized student feedback
+                    </li><br></br>
+                    <li>
+                        <strong style={{color: darkMode? 'white': ''}}>NIT Computer Training Center</strong> - Python Instructor<br />
+                        • Instructed OOP concepts and Python programming<br />
+                        • Evaluated student projects and assignments
+                    </li><br></br>
+                    <li>
+                        <strong style={{color: darkMode? 'white': ''}}>Vodafone</strong> - Customer Service Representative<br />
                         Provided excellent customer support, handled inquiries, and resolved issues in a professional manner.
-                    </li>
-                    <li>
-                        <strong>Shree Hari Institute</strong> (Instructor)<br />
-                        Taught students fundamental programming concepts, provided support, and graded assignments.
-                    </li>
-                    <li>
-                        <strong>NIT Computer Training Center</strong> (Python Instructor)<br />
-                        Conducted Python programming classes, assisted students, and evaluated their progress.
                     </li>
                 </ul>
                 </span>
-                <Link spy={true} to='Contact' smooth={true}>
-
-               <button className="button s-button">Hire me</button>
-                </Link>
+               
+                <Link to="contact" smooth={true} spy={true}>
+                          <button className="button s-button">Hire me</button>
+                        </Link>
                 <div className="blur s-blur1" style={{ background: "#abf1ff94" }}></div>
             </div>
             {/* Right side  */}
@@ -66,7 +74,7 @@ function Works() {
                         <img src={McDonalds} alt=''/>
                     </div>
                     <div className="w-secCircle">
-                        <img src={sevenEleven} alt=''/>
+                        <img src={Ontartio} alt=''/>
                     </div>
                 </motion.div>
                     {/* Background Circles  */}

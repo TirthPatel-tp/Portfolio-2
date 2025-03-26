@@ -6,24 +6,33 @@ const Experience = () => {
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className="experience" id='experience'>
-      <div className="achievement">
-        {/* darkMode */}
-        <div className="circle" style={{color: darkMode?'var(--orange)':''}}>2+</div>
-        <span  style={{color: darkMode?'white':''}}>years </span>
-        <span>Experience</span>
-      </div>
-      <div className="achievement">
-        <div className="circle" style={{color: darkMode?'var(--orange)':''}}>10+</div>
-        <span  style={{color: darkMode?'white':''}}>completed </span>
-        <span>Projects</span>
-      </div>
-      <div className="achievement">
-        <div className="circle" style={{color: darkMode?'var(--orange)':''}}>5+</div>
-        <span  style={{color: darkMode?'white':''}}>Different languages </span>
-        <span>Certificates</span>
-      </div>
+<div className="experience" id="experience">
+  <div className="achievement">
+    <div className="circle">
+      {/* Inner circle for the text */}
+      <div className="inner-circle">2+</div>
     </div>
+    <span style={{ color: darkMode ? 'white' : '' }}>years </span>
+    <span>Experience</span>
+  </div>
+
+  <div className="achievement">
+    <div className="circle">
+      <div className="inner-circle">10+</div>
+    </div>
+    <span style={{ color: darkMode ? 'white' : '' }}>completed </span>
+    <span>Projects</span>
+  </div>
+
+  <div className="achievement">
+    <div className="circle">
+      <div className="inner-circle">5+</div>
+    </div>
+    <span style={{ color: darkMode ? 'white' : '' }}>Different languages </span>
+    <span>Certificates</span>
+  </div>
+</div>
+
   );
 };
 

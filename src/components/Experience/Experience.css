@@ -1,51 +1,54 @@
 .experience {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5rem;
-  height: 30vh;
-  margin-bottom: 8rem;
-  /* darkmode */
-  color: var(--black);
-}
-.achievement{
     display: flex;
-    flex-direction: column;    
     align-items: center;
-}
-.circle {
-    width: 4rem;
-    height: 4rem;
-    background: white;
-    border-radius: 100%;
-    position: relative;
+    justify-content: center;
+    gap: 5rem;
+    height: 30vh;
+    margin-bottom: 8rem;
+    color: var(--black);
+  }
+  
+  .achievement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Outer circle with a gradient background */
+  .circle {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    /* Vibrant pinkish gradient (45° angle) */
+    background: linear-gradient(45deg, #ff512f, #dd2476);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+  
+  .inner-circle {
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    background: #ffffff; /* or var(--white) if using CSS variables */
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
     font-weight: bold;
-    margin-bottom: 2rem;
-}
-.circle::before {
-    border-radius: 100%;
-    content: '';
-    background-image: linear-gradient(to bottom, #87e6fb 0%, #ffc05c 100%);
-    top: -8px;
-    left: -8px;
-    bottom: -8px;
-    right: -8px;
-    position: absolute;
-    z-index:-1;
-    box-shadow: var(--boxShadow);
-}
-
-.achievement span:nth-of-type(2){
     color: var(--orange);
-}
-
-
-@media screen and (max-width: 480px) {
-    .experience{
-        transform: scale(0.7);
+  }
+  
+  
+  /* Make the second span in each achievement orange, if you like */
+  .achievement span:nth-of-type(2) {
+    color: var(--orange);
+  }
+  
+  @media screen and (max-width: 480px) {
+    .experience {
+      transform: scale(0.7);
     }
-}
+  }
+  

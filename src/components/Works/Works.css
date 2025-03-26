@@ -3,6 +3,7 @@
   display: flex;
   height: 90vh;
   margin-top: 4rem;
+  margin-bottom: 7rem;
 
   /* scroll */
   align-items: center;
@@ -32,7 +33,7 @@
 .s-button {
   width: 8rem;
   height: 2rem;
-  margin-top: 4rem;
+  margin-top: 1rem;
 }
 
 /* right side */
@@ -41,7 +42,7 @@
 }
 
 .w-mainCircle {
-  left: 9rem;
+  left: 2rem;
   position: relative;
   width: 18rem;
   height: 18rem;
@@ -90,7 +91,10 @@
 }
 
 .w-secCircle > img {
-  transform: scale(0.6);
+  transform: scale(1);
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
 }
 
 .w-backCircle {
@@ -103,12 +107,12 @@
 }
 .blueCircle {
   background: #1949b8;
-  left: 18rem;
+  left: 11rem;
   top: 0rem;
 }
 .yellowCircle {
   background: #f5c32c;
-  left: 18rem;
+  left: 11rem;
   top: 8rem;
 }
 

@@ -20,20 +20,32 @@ function Services() {
             <div className="awesome">
                 <span style={{color: darkMode? 'white': ''}}>My Awesome</span>
                 <span>Services</span>
-                <span>Here are the services I offer:</span>
+                <strong>Here are the services I offer:</strong>
                 <ul>
-                    <li>Web Design and Development</li>
+                    <li>Web Design and Development (React, Angular, Django)</li>
                     <li>Responsive UI/UX Design</li>
                     <li>Front-End Development with HTML, CSS, and JavaScript</li>
-                    <li>React Application Development</li>
                     <li>Node.js Backend Development</li>
                     <li>C++ Programming</li>
                     <li>Angular Application Development</li>
+                    <li>Database Management (SQL, MongoDB)</li>
+                    <li>API Development (RESTful APIs)</li>
                 </ul>
+                
+                <div className="blur s-blur1" style={{ background: "#abf1ff94" }}></div>
+                <div className="certifications">
+                <span>Certifications:</span>
+                <ul>
+                    <li>React (LinkedIn)</li>
+                    <li>Python Essentials</li>
+                    <li>Git & GitHub</li>
+                    <li>Angular</li>
+                    <li>MySQL</li>
+                </ul>
+                </div>
                 <a href={Resume} download>
                     <button className="s-button button">Download CV</button>
                 </a>
-                <div className="blur s-blur1" style={{ background: "#abf1ff94" }}></div>
             </div>
             {/* right side  */}
             <div className="cards">
@@ -57,9 +69,9 @@ function Services() {
                 style={{ top: '12rem', left: '-4rem' }}>
                     <Card
                         emoji={Glasses}
-                        heading={'Developer'}
+                        heading={'Full-Stack'}
                         detail={"HTML, CSS, JS, React, Node.js, c++, Angular"} 
-                        selectedDetails ={ " I have created several project using this language "}
+                        selectedDetails ={ "Built 10+ projects including iNotebook and KJ-Infrastructure"}
                         />
                 </motion.div>
                 {/* Third Card  */}

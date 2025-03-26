@@ -27,6 +27,7 @@
   font-weight: bold;
   font-size: 3rem;
 }
+
 .i-name > :nth-child(3) {
   font-weight: 100;
   font-size: 14px;
@@ -69,8 +70,8 @@
 }
 
 .i-right > :nth-child(3) {
-  transform: scale(1);
-  left: 9%;
+  transform: scale(0.8);
+  left: 13%;
   top: -20%;
 }
 .i-right > :nth-child(4) {
