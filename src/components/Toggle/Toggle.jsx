@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import "./Toggle.css";
 import Moon from "@iconscout/react-unicons/icons/uil-moon";
 import Sun from "@iconscout/react-unicons/icons/uil-sun";
@@ -8,12 +8,6 @@ const Toggle = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   
-  useEffect(() => {
-    if (!darkMode) {
-      theme.dispatch({ type: "toggle" });
-    }
-  }, [darkMode, theme]);
-
   const handleClick = () => {
     theme.dispatch({ type: "toggle" });
   };

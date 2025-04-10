@@ -27,7 +27,7 @@ const Intro = () => {
       <div className="i-left">
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
-          <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
+          <span style={{ color: darkMode ? "white" : "" }}>Hey! I Am</span>
           <span>Tirth Patel</span>
           <span>
           I'm a dedicated and adaptable college student pursuing an Advanced Diploma in Computer Programming and Analysis (CPA) at Seneca College in Toronto, ON. With a strong foundation in data analytics, project management, and report preparation, I bring expertise as a skilled programmer and problem-solver. My passion lies in delivering high-quality code, providing valuable technical support, and applying exceptional interpersonal skills to contribute to team success. I'm highly motivated, customer-focused, and enthusiastic about taking on new challenges in a collaborative and innovative environment.
