@@ -1,0 +1,45 @@
+.footer {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: var(--bg-secondary);
+    transition: var(--transition);
+  }
+  
+  .dark {
+    background: var(--dark-bg-secondary);
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .socialLinks {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .icon {
+    font-size: 4rem;
+    color: var(--primary);
+    margin: 0 2rem;
+    transition: var(--transition);
+    padding: 0.5rem;
+  }
+  /* .icon {
+    width: 24px;
+    height: 24px;
+    color: rgb(20, 167, 196);
+    transition: var(--transition);
+  } */
+  
+  .icon:hover {
+    color: var(--primary);
+  }
+  
+  .copyright {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+  }

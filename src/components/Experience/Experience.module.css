@@ -1,0 +1,104 @@
+.experience {
+    padding: 4rem 2rem;
+    background: var(--card-bg);
+  }
+  
+  .title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--primary);
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background: var(--primary);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+  }
+  
+  .timelineItem {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+  }
+  
+  .timelineItem:nth-child(odd) {
+    left: 0;
+    text-align: right;
+  }
+  
+  .timelineItem:nth-child(even) {
+    left: 50%;
+  }
+  
+  .timelineContent {
+    padding: 20px 30px;
+    background: var(--bg-primary);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    position: relative;
+  }
+  
+  .timelineContent h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  
+  .timelineContent h4 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    opacity: 0.9;
+  }
+  
+  .date {
+    display: block;
+    color: var(--primary);
+    font-weight: 500;
+    margin-bottom: 1rem;
+  }
+  
+  .points {
+    list-style: none;
+    padding-left: 1rem;
+  }
+  
+  .points li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+  
+  .points li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: var(--primary);
+  }
+  
+  @media (max-width: 768px) {
+    .timeline::after {
+      left: 31px;
+    }
+  
+    .timelineItem {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+      text-align: left !important;
+    }
+  
+    .timelineItem:nth-child(even) {
+      left: 0;
+    }
+  }

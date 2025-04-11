@@ -1,0 +1,85 @@
+.skills {
+  padding: 4rem 2rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  color: var(--primary);
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 2rem;
+  margin: 4rem 0 2rem;
+  color: var(--primary);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skill {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.barContainer {
+  width: 100%;
+  height: 10px;
+  background: var(--input-bg);
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.bar {
+  height: 100%;
+  background: var(--primary);
+  border-radius: 5px;
+  position: relative;
+  transition: width 1s ease;
+}
+
+.bar span {
+  position: absolute;
+  right: 0;
+  top: -25px;
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.skill h3 {
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.softSkills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.softSkill {
+  background: var(--primary);
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
